@@ -6,7 +6,7 @@ This file can be opened in Power BI program in desktop.
 The analysis process is explained step-by-step below.
 
 # Overview of Company
-This is an xample dataset created by OpenAI.
+This is an example dataset created by OpenAI.
 
 # Data Cleaning
 The original file used for this analysis is SalesTable.csv, which was reviewed to ensure data quality (mostly format issues & outliers were detected) using PowerQuery.
