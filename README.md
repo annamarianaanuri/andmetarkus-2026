@@ -1,3 +1,1 @@
-# andmetarkus-2026
-
-Andmetarkuse kursuse materjalid
+Andmetarkuse kursuse materjalid.
