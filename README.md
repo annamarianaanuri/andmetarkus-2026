@@ -5,7 +5,7 @@ This project was created as part of a Data Analytics course. It presents a sales
 The goal of this project is to demonstrate the full analytics workflow: data preparation, data cleaning, data modeling & insight generation using Power BI.
 
 # File Location
-The source file SalesReport.csv can be found here: github.com/annamarianaanuri/andmetarkus-2026/blob/main/Sales%20Report/SalesTable.csv
+The source file SalesReport.csv can be found here: https://github.com/annamarianaanuri/andmetarkus-2026/blob/main/Sales%20Report/SalesTable.csv  
 To open the file, use Power BI Desktop.
 
 This is a synthetic (example) dataset created by OpenAI.  
