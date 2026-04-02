@@ -4,14 +4,14 @@ This project was created as part of a Data Analytics course. It presents a sales
 
 The goal of this project is to demonstrate the full analytics workflow: data preparation, data cleaning, data modeling & insight generation using Power BI.
 
-# File Location
+## File Location
 The source file SalesReport.csv can be found here: https://github.com/annamarianaanuri/andmetarkus-2026/blob/main/Sales%20Report/SalesTable.csv  
 
 To open the file, use Power BI Desktop.
 
 This is a synthetic (example) dataset created by OpenAI.  
 
-# Dataset
+## Dataset
 The dataset follows a star schema, where fact tables store measurable business data and dimension tables provide descriptive context for analysis.
 The structure enables efficient filtering, aggregation, and drill-down analysis in Power BI.
 
@@ -19,16 +19,35 @@ Fact Tables - SalesTable, Budget.
 
 Dimension Tables - Date, SalesRep, Customer, Product, Region.
 
-# Data Cleaning
+### Data Cleaning
 Data cleaning was performed using Power Query in Power BI.
 The key issues identified were formatting inconsistencies, data entry errors and outliers in quantity values.
 
 All data quality updates in the source file SalesTable.csv are made on 31.03.2026 based on input from the sales representative.
 
-CustomerID: C005 should be C004.
+Quality updates are as following:
+- CustomerID: C005 should be C004.
+- ProductID: P005 and P006 should be P004.
+- Incorrect quantity in sales row S00009: Originally 300, corrected to 3 in the cleaned file.
+- Incorrect quantity in sales row S00010: Originally 2000, corrected to 20 in the cleaned file.
 
-ProductID: P005 and P006 should be P004.
 
-Incorrect quantity in sales row S00009: Originally 300, corrected to 3 in the cleaned file.
+# Employer Report
 
-Incorrect quantity in sales row S00010: Originally 2000, corrected to 20 in the cleaned file.
+## Problem Statement
+HR apartment wants an overview of active and unactive employees over a given time period and results of the satisfactory survey.  
+
+## Plan
+I will create a Power BI Report to give this overview.  
+
+## Data
+HR department gave me two files:   
+- Employee_Satisfaction_Survey.xlsx
+- HR_Dataset.csv
+
+### Data Cleaning
+Data cleanin is performed via Power Query.
+I checked data for uniqueness, formats and outliers. 
+Survey dataset did not have a unique key column. I created a new column ''Answer Key'' which combined ''Question Round'' and ''Answer ID''.
+In HR dataset, I removed sensitive person data including first name, last name, e-mail address. I also removed column employment status, as the data does not align with current dataset and is not up to date according to the HR department.
+Column salary format was changed to decimal number.
