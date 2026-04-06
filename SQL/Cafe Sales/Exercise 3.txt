@@ -1,0 +1,22 @@
+-- Data analysis based on cafe_sales_cafe_sales_table_cleaned 
+
+-- 1. Items based on quantity
+
+SELECT item_cleaned, SUM(quantity) AS sum_quantity
+FROM cafe_sales_table_cleaned 
+GROUP BY item_cleaned
+ORDER BY sum(quantity) DESC;  
+
+-- 2. Items based on total_spent_calc 
+
+SELECT item_cleaned, SUM(quantity) AS sum_quantity, SUM(total_spent_calc) AS sum_total_spent
+FROM cafe_sales_table_cleaned 
+GROUP BY item_cleaned
+ORDER BY sum(total_spent_calc) DESC;  
+
+-- 3. Items based on location 
+
+SELECT item_cleaned, SUM(quantity) AS sum_quantity, SUM(total_spent_calc) AS sum_total_spent, location_cleaned
+FROM cafe_sales_table_cleaned 
+GROUP BY item_cleaned
+ORDER BY total_spent_calc DESC;  
