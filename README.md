@@ -1,53 +1,99 @@
-# Data Analytics Study Materials
+# Data Analytics Portfolio
 
-This project was created as part of a Data Analytics course. It presents a sales analysis built using Power BI, including data cleaning, transformation and visualization.
+This repository contains projects completed as part of my Data Analytics studies. Each project demonstrates the end-to-end analytics workflow: data cleaning, transformation, modeling and insight generation using Power BI.  
 
-The goal of this project is to demonstrate the full analytics workflow: data preparation, data cleaning, data modeling & insight generation using Power BI.
 
-## File Location
-The source file SalesReport.csv can be found here: https://github.com/annamarianaanuri/andmetarkus-2026/blob/main/Sales%20Report/SalesTable.csv  
+## Sales Analysis Report
+### Overview  
 
-To open the file, use Power BI Desktop.
+This project presents a sales analysis built in Power BI, demonstrating the full analytics workflow from raw data to actionable insights.
 
-This is a synthetic (example) dataset created by OpenAI.  
 
-## Dataset
-The dataset follows a star schema, where fact tables store measurable business data and dimension tables provide descriptive context for analysis.
-The structure enables efficient filtering, aggregation, and drill-down analysis in Power BI.
+### Data Source
 
-Fact Tables - SalesTable, Budget.
+The dataset used in this project is a synthetic dataset created by OpenAI.
 
-Dimension Tables - Date, SalesRep, Customer, Product, Region.
+Sales data file:
+https://github.com/annamarianaanuri/andmetarkus-2026/blob/main/Sales%20Report/SalesTable.csv
+
+
+### Data Model
+
+The dataset follows a star schema structure:
+
+Fact Tables: SalesTable, Budget  
+Dimension Tables: Date, SalesRep, Customer, Product, Region
+
+This structure enables efficient filtering, aggregation, and drill-down analysis in Power BI.
+
 
 ### Data Cleaning
-Data cleaning was performed using Power Query in Power BI.
-The key issues identified were formatting inconsistencies, data entry errors and outliers in quantity values.
 
-All data quality updates in the source file SalesTable.csv are made on 31.03.2026 based on input from the sales representative.
+Data cleaning was performed using Power Query.     
 
-Quality updates are as following:
-- CustomerID: C005 should be C004.
-- ProductID: P005 and P006 should be P004.
-- Incorrect quantity in sales row S00009: Originally 300, corrected to 3 in the cleaned file.
-- Incorrect quantity in sales row S00010: Originally 2000, corrected to 20 in the cleaned file.
+#### The following issues were identified and corrected:
+1. Formatting inconsistencies and data entry errors
+2. Outliers in quantity values
+
+#### Corrections applied (31.03.2026):  
+1. CustomerID: C005 → C004
+2. ProductID: P005 and P006 → P004
+3. Sales row S00009: Quantity 300 → 3
+4. Sales row S00010: Quantity 2000 → 20
+
+### Outcome
+
+#### The final Power BI report enables:  
+1. Analysis of sales performance across regions and products
+2. Identification of trends and anomalies
+3. Interactive filtering and drill-down capabilities
 
 
-# Employer Report
+## HR Analytics Report
+### Overview
 
-## Problem Statement
-HR apartment wants an overview of active and unactive employees over a given time period and results of the satisfactory survey.  
+This project focuses on HR analytics, providing insights into employee status and satisfaction levels over time.
 
-## Plan
-I will create a Power BI Report to give this overview.  
+### Problem Statement
 
-## Data
-HR department gave me two files:   
-- Employee_Satisfaction_Survey.xlsx
-- HR_Dataset.csv
+#### The HR department required:
+1. An overview of active vs inactive employees over a given time period
+2. Insights from the employee satisfaction survey
+
+### Data Source
+
+#### Two datasets were provided by the HR department:  
+1. Employee_Satisfaction_Survey.xlsx
+2. HR_Dataset.csv
+
 
 ### Data Cleaning
-Data cleanin is performed via Power Query.
-I checked data for uniqueness, formats and outliers. 
-Survey dataset did not have a unique key column. I created a new column ''Answer Key'' which combined ''Question Round'' and ''Answer ID''.
-In HR dataset, I removed sensitive person data including first name, last name, e-mail address. I also removed column employment status, as the data does not align with current dataset and is not up to date according to the HR department.
-Column salary format was changed to decimal number.
+
+#### Data cleaning was performed using Power Query with a focus on data quality and privacy:
+1. Validated uniqueness, formats, and outliers
+2. Created a new "Answer Key" column in the survey dataset by combining:
+   2.1 Question Round
+   2.2 Answer ID
+
+#### In the HR dataset:
+1. Removed sensitive personal data:
+   1.1 First name
+   1.2 Last name
+   1.3 Email address
+   1.4 Removed Employment Status column (outdated and inconsistent with current data)
+   1.5 Converted Salary column to decimal format
+
+
+### Data Model
+
+#### The datasets were structured to enable analysis between:  
+1. Employee activity status
+2. Survey responses over time
+
+
+### Outcome
+
+#### The Power BI report provides:  
+1. Clear overview of workforce activity (active vs inactive employees)
+2. Employee satisfaction insights
+3. Interactive filtering by time period and survey data
