@@ -1,0 +1,10 @@
+
+Avastatud andmekvaliteedi probleemid ja parandused:
+
+1. Customer ID - COO5 / õige on C004, muudetus alusfailis Sale ID S00007, S00008 31.03.2026 müügiesindaja sisendi põhjal
+
+2. Product ID - P005, P006 / õige on P004, muudetus alusfailis Sale ID S00002, S00003, S00009 31.03.2026 müügiesindaja sisendi põhjal
+
+3. Quantity - 300 / õige on 3, muudetud alusfailis Sale ID S00009 31.03.2026 müügiesindaja sisendi põhjal
+
+4. Unit Price - 2000 / õige on 20, muudetud alusfailis Sale ID S00010 31.03.2026 müügiesindaja sisendi põhjal
