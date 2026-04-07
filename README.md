@@ -71,17 +71,18 @@ This project focuses on HR analytics, providing insights into employee status an
 
 #### Data cleaning was performed using Power Query with a focus on data quality and privacy:
 1. Validated uniqueness, formats, and outliers
-2. Created a new "Answer Key" column in the survey dataset by combining:
-   2.1 Question Round
-   2.2 Answer ID
+
+Created a new "Answer Key" column in the survey dataset by combining:  
+1. Question Round
+2. Answer ID
 
 #### In the HR dataset:
 1. Removed sensitive personal data:
-   1.1 First name
-   1.2 Last name
-   1.3 Email address
-   1.4 Removed Employment Status column (outdated and inconsistent with current data)
-   1.5 Converted Salary column to decimal format
+2. First name
+3. Last name
+4. Email address
+5. Removed Employment Status column (outdated and inconsistent with current data)
+6. Converted Salary column to decimal format
 
 
 ### Data Model
